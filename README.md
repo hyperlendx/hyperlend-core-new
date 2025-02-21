@@ -1,10 +1,7 @@
-# Aave V3.2 Origin
+# HyperLend Core
 
-![Aave v3.1 Origin_banner](./resources/v3-1-banner.jpeg)
+A [Friendly Fork](https://governance.aave.com/t/arfc-recognize-hyperlend-as-a-friendly-fork/) of Aave v3
 
-Aave v3.2 complete codebase, Foundry-based.
-
-[![Coverage badge](./report/coverage.svg)](https://aave-dao.github.io/aave-v3-origin)
 <br>
 
 ## Dependencies
