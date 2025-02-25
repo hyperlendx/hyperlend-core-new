@@ -9,7 +9,7 @@ import {Ownable} from '../../dependencies/openzeppelin/contracts/Ownable.sol';
  */
 contract Executor is Ownable {
   function execute(address payload) external onlyOwner() {
-    (bool success,) = payload.delegatecall(abi.encodeWithSignature('execute()'));
+    (bool success, bytes memory returndata) = payload.delegatecall(abi.encodeWithSignature('execute()'));
     if (!success) {
       _revertWithReason(returndata);
     }
